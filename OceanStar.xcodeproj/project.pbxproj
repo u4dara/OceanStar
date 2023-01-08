@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		401DF71F2962BDD300EDBD3A /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401DF71E2962BDD300EDBD3A /* ForgetPasswordViewController.swift */; };
+		401DF7212962C02500EDBD3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 401DF7202962C02500EDBD3A /* GoogleService-Info.plist */; };
+		401DF7242962C09E00EDBD3A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 401DF7232962C09E00EDBD3A /* FirebaseAuth */; };
+		401DF7262962C09E00EDBD3A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 401DF7252962C09E00EDBD3A /* FirebaseDatabase */; };
+		401DF72D2963309B00EDBD3A /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 401DF72C2963309B00EDBD3A /* MBProgressHUD */; };
+		401DF72F2963380400EDBD3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401DF72E2963380400EDBD3A /* HomeViewController.swift */; };
+		4094428A2961C8FB00520428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442892961C8FB00520428 /* AppDelegate.swift */; };
+		4094428C2961C8FB00520428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094428B2961C8FB00520428 /* SceneDelegate.swift */; };
+		409442912961C8FB00520428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094428F2961C8FB00520428 /* Main.storyboard */; };
+		409442932961C8FC00520428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409442922961C8FC00520428 /* Assets.xcassets */; };
+		409442962961C8FC00520428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409442942961C8FC00520428 /* LaunchScreen.storyboard */; };
+		409442A12961C8FD00520428 /* OceanStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442A02961C8FD00520428 /* OceanStarTests.swift */; };
+		409442AB2961C8FD00520428 /* OceanStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442AA2961C8FD00520428 /* OceanStarUITests.swift */; };
+		409442AD2961C8FD00520428 /* OceanStarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442AC2961C8FD00520428 /* OceanStarUITestsLaunchTests.swift */; };
+		409442BD2961DC4200520428 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442BC2961DC4200520428 /* LoginViewController.swift */; };
+		409442BF2961DC5500520428 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442BE2961DC5500520428 /* SignViewController.swift */; };
+		409442C12961DC6400520428 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442C02961DC6400520428 /* LoadingViewController.swift */; };
+		409442C32961DC9B00520428 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442C22961DC9B00520428 /* SettingsViewController.swift */; };
+		409442C52961E4C400520428 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442C42961E4C400520428 /* Helper.swift */; };
+		409442C72961E5BB00520428 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442C62961E5BB00520428 /* Constants.swift */; };
+		409442CA2961F88000520428 /* PresenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442C92961F88000520428 /* PresenterManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4094429D2961C8FD00520428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4094427E2961C8FA00520428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409442852961C8FB00520428;
+			remoteInfo = OceanStar;
+		};
+		409442A72961C8FD00520428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4094427E2961C8FA00520428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409442852961C8FB00520428;
+			remoteInfo = OceanStar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		401DF71E2962BDD300EDBD3A /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		401DF7202962C02500EDBD3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		401DF72E2963380400EDBD3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		409442862961C8FB00520428 /* OceanStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OceanStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		409442892961C8FB00520428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4094428B2961C8FB00520428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		409442902961C8FB00520428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		409442922961C8FC00520428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		409442952961C8FC00520428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		409442972961C8FC00520428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4094429C2961C8FD00520428 /* OceanStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OceanStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		409442A02961C8FD00520428 /* OceanStarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanStarTests.swift; sourceTree = "<group>"; };
+		409442A62961C8FD00520428 /* OceanStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OceanStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		409442AA2961C8FD00520428 /* OceanStarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanStarUITests.swift; sourceTree = "<group>"; };
+		409442AC2961C8FD00520428 /* OceanStarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanStarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		409442BC2961DC4200520428 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		409442BE2961DC5500520428 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		409442C02961DC6400520428 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		409442C22961DC9B00520428 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		409442C42961E4C400520428 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		409442C62961E5BB00520428 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		409442C92961F88000520428 /* PresenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		409442832961C8FB00520428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401DF72D2963309B00EDBD3A /* MBProgressHUD in Frameworks */,
+				401DF7262962C09E00EDBD3A /* FirebaseDatabase in Frameworks */,
+				401DF7242962C09E00EDBD3A /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409442992961C8FD00520428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409442A32961C8FD00520428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4094427D2961C8FA00520428 = {
+			isa = PBXGroup;
+			children = (
+				409442882961C8FB00520428 /* OceanStar */,
+				4094429F2961C8FD00520428 /* OceanStarTests */,
+				409442A92961C8FD00520428 /* OceanStarUITests */,
+				409442872961C8FB00520428 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		409442872961C8FB00520428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				409442862961C8FB00520428 /* OceanStar.app */,
+				4094429C2961C8FD00520428 /* OceanStarTests.xctest */,
+				409442A62961C8FD00520428 /* OceanStarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		409442882961C8FB00520428 /* OceanStar */ = {
+			isa = PBXGroup;
+			children = (
+				409442C82961F86700520428 /* Manager */,
+				409442BA2961CAA100520428 /* Helpers */,
+				409442B92961CA9400520428 /* Controllers */,
+				409442892961C8FB00520428 /* AppDelegate.swift */,
+				4094428B2961C8FB00520428 /* SceneDelegate.swift */,
+				4094428F2961C8FB00520428 /* Main.storyboard */,
+				409442922961C8FC00520428 /* Assets.xcassets */,
+				409442942961C8FC00520428 /* LaunchScreen.storyboard */,
+				409442972961C8FC00520428 /* Info.plist */,
+				401DF7202962C02500EDBD3A /* GoogleService-Info.plist */,
+			);
+			path = OceanStar;
+			sourceTree = "<group>";
+		};
+		4094429F2961C8FD00520428 /* OceanStarTests */ = {
+			isa = PBXGroup;
+			children = (
+				409442A02961C8FD00520428 /* OceanStarTests.swift */,
+			);
+			path = OceanStarTests;
+			sourceTree = "<group>";
+		};
+		409442A92961C8FD00520428 /* OceanStarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				409442AA2961C8FD00520428 /* OceanStarUITests.swift */,
+				409442AC2961C8FD00520428 /* OceanStarUITestsLaunchTests.swift */,
+			);
+			path = OceanStarUITests;
+			sourceTree = "<group>";
+		};
+		409442B92961CA9400520428 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				409442BC2961DC4200520428 /* LoginViewController.swift */,
+				409442BE2961DC5500520428 /* SignViewController.swift */,
+				409442C02961DC6400520428 /* LoadingViewController.swift */,
+				409442C22961DC9B00520428 /* SettingsViewController.swift */,
+				401DF71E2962BDD300EDBD3A /* ForgetPasswordViewController.swift */,
+				401DF72E2963380400EDBD3A /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		409442BA2961CAA100520428 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				409442C62961E5BB00520428 /* Constants.swift */,
+				409442C42961E4C400520428 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		409442C82961F86700520428 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				409442C92961F88000520428 /* PresenterManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		409442852961C8FB00520428 /* OceanStar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409442B02961C8FD00520428 /* Build configuration list for PBXNativeTarget "OceanStar" */;
+			buildPhases = (
+				409442822961C8FB00520428 /* Sources */,
+				409442832961C8FB00520428 /* Frameworks */,
+				409442842961C8FB00520428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OceanStar;
+			packageProductDependencies = (
+				401DF7232962C09E00EDBD3A /* FirebaseAuth */,
+				401DF7252962C09E00EDBD3A /* FirebaseDatabase */,
+				401DF72C2963309B00EDBD3A /* MBProgressHUD */,
+			);
+			productName = OceanStar;
+			productReference = 409442862961C8FB00520428 /* OceanStar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4094429B2961C8FD00520428 /* OceanStarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409442B32961C8FD00520428 /* Build configuration list for PBXNativeTarget "OceanStarTests" */;
+			buildPhases = (
+				409442982961C8FD00520428 /* Sources */,
+				409442992961C8FD00520428 /* Frameworks */,
+				4094429A2961C8FD00520428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4094429E2961C8FD00520428 /* PBXTargetDependency */,
+			);
+			name = OceanStarTests;
+			productName = OceanStarTests;
+			productReference = 4094429C2961C8FD00520428 /* OceanStarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		409442A52961C8FD00520428 /* OceanStarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409442B62961C8FD00520428 /* Build configuration list for PBXNativeTarget "OceanStarUITests" */;
+			buildPhases = (
+				409442A22961C8FD00520428 /* Sources */,
+				409442A32961C8FD00520428 /* Frameworks */,
+				409442A42961C8FD00520428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				409442A82961C8FD00520428 /* PBXTargetDependency */,
+			);
+			name = OceanStarUITests;
+			productName = OceanStarUITests;
+			productReference = 409442A62961C8FD00520428 /* OceanStarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4094427E2961C8FA00520428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					409442852961C8FB00520428 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					4094429B2961C8FD00520428 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 409442852961C8FB00520428;
+					};
+					409442A52961C8FD00520428 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 409442852961C8FB00520428;
+					};
+				};
+			};
+			buildConfigurationList = 409442812961C8FA00520428 /* Build configuration list for PBXProject "OceanStar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4094427D2961C8FA00520428;
+			packageReferences = (
+				401DF7222962C09E00EDBD3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				401DF72B2963309B00EDBD3A /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
+			productRefGroup = 409442872961C8FB00520428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				409442852961C8FB00520428 /* OceanStar */,
+				4094429B2961C8FD00520428 /* OceanStarTests */,
+				409442A52961C8FD00520428 /* OceanStarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		409442842961C8FB00520428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409442962961C8FC00520428 /* LaunchScreen.storyboard in Resources */,
+				401DF7212962C02500EDBD3A /* GoogleService-Info.plist in Resources */,
+				409442932961C8FC00520428 /* Assets.xcassets in Resources */,
+				409442912961C8FB00520428 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4094429A2961C8FD00520428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409442A42961C8FD00520428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		409442822961C8FB00520428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409442BD2961DC4200520428 /* LoginViewController.swift in Sources */,
+				409442C52961E4C400520428 /* Helper.swift in Sources */,
+				401DF71F2962BDD300EDBD3A /* ForgetPasswordViewController.swift in Sources */,
+				4094428A2961C8FB00520428 /* AppDelegate.swift in Sources */,
+				409442CA2961F88000520428 /* PresenterManager.swift in Sources */,
+				409442C12961DC6400520428 /* LoadingViewController.swift in Sources */,
+				4094428C2961C8FB00520428 /* SceneDelegate.swift in Sources */,
+				401DF72F2963380400EDBD3A /* HomeViewController.swift in Sources */,
+				409442BF2961DC5500520428 /* SignViewController.swift in Sources */,
+				409442C32961DC9B00520428 /* SettingsViewController.swift in Sources */,
+				409442C72961E5BB00520428 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409442982961C8FD00520428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409442A12961C8FD00520428 /* OceanStarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409442A22961C8FD00520428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409442AB2961C8FD00520428 /* OceanStarUITests.swift in Sources */,
+				409442AD2961C8FD00520428 /* OceanStarUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4094429E2961C8FD00520428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409442852961C8FB00520428 /* OceanStar */;
+			targetProxy = 4094429D2961C8FD00520428 /* PBXContainerItemProxy */;
+		};
+		409442A82961C8FD00520428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409442852961C8FB00520428 /* OceanStar */;
+			targetProxy = 409442A72961C8FD00520428 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4094428F2961C8FB00520428 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409442902961C8FB00520428 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		409442942961C8FC00520428 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409442952961C8FC00520428 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		409442AE2961C8FD00520428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		409442AF2961C8FD00520428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		409442B12961C8FD00520428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2B6A67YKBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OceanStar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udara.OceanStar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		409442B22961C8FD00520428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2B6A67YKBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OceanStar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udara.OceanStar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		409442B42961C8FD00520428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2B6A67YKBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udara.OceanStarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OceanStar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OceanStar";
+			};
+			name = Debug;
+		};
+		409442B52961C8FD00520428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2B6A67YKBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udara.OceanStarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OceanStar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OceanStar";
+			};
+			name = Release;
+		};
+		409442B72961C8FD00520428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2B6A67YKBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udara.OceanStarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OceanStar;
+			};
+			name = Debug;
+		};
+		409442B82961C8FD00520428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2B6A67YKBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udara.OceanStarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OceanStar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		409442812961C8FA00520428 /* Build configuration list for PBXProject "OceanStar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409442AE2961C8FD00520428 /* Debug */,
+				409442AF2961C8FD00520428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409442B02961C8FD00520428 /* Build configuration list for PBXNativeTarget "OceanStar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409442B12961C8FD00520428 /* Debug */,
+				409442B22961C8FD00520428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409442B32961C8FD00520428 /* Build configuration list for PBXNativeTarget "OceanStarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409442B42961C8FD00520428 /* Debug */,
+				409442B52961C8FD00520428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409442B62961C8FD00520428 /* Build configuration list for PBXNativeTarget "OceanStarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409442B72961C8FD00520428 /* Debug */,
+				409442B82961C8FD00520428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		401DF7222962C09E00EDBD3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		401DF72B2963309B00EDBD3A /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		401DF7232962C09E00EDBD3A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401DF7222962C09E00EDBD3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		401DF7252962C09E00EDBD3A /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401DF7222962C09E00EDBD3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		401DF72C2963309B00EDBD3A /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401DF72B2963309B00EDBD3A /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4094427E2961C8FA00520428 /* Project object */;
+}
