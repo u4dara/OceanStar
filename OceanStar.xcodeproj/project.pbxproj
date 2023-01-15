@@ -13,6 +13,7 @@
 		401DF7262962C09E00EDBD3A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 401DF7252962C09E00EDBD3A /* FirebaseDatabase */; };
 		401DF72D2963309B00EDBD3A /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 401DF72C2963309B00EDBD3A /* MBProgressHUD */; };
 		401DF72F2963380400EDBD3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401DF72E2963380400EDBD3A /* HomeViewController.swift */; };
+		402DC11E2972A1FE0059D4BD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 402DC11D2972A1FE0059D4BD /* FirebaseFirestore */; };
 		4094428A2961C8FB00520428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442892961C8FB00520428 /* AppDelegate.swift */; };
 		4094428C2961C8FB00520428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094428B2961C8FB00520428 /* SceneDelegate.swift */; };
 		409442912961C8FB00520428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094428F2961C8FB00520428 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				401DF72D2963309B00EDBD3A /* MBProgressHUD in Frameworks */,
+				402DC11E2972A1FE0059D4BD /* FirebaseFirestore in Frameworks */,
 				401DF7262962C09E00EDBD3A /* FirebaseDatabase in Frameworks */,
 				401DF7242962C09E00EDBD3A /* FirebaseAuth in Frameworks */,
 			);
@@ -100,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402DC11C2972A1FE0059D4BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4094427D2961C8FA00520428 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +116,7 @@
 				4094429F2961C8FD00520428 /* OceanStarTests */,
 				409442A92961C8FD00520428 /* OceanStarUITests */,
 				409442872961C8FB00520428 /* Products */,
+				402DC11C2972A1FE0059D4BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,6 +214,7 @@
 				401DF7232962C09E00EDBD3A /* FirebaseAuth */,
 				401DF7252962C09E00EDBD3A /* FirebaseDatabase */,
 				401DF72C2963309B00EDBD3A /* MBProgressHUD */,
+				402DC11D2972A1FE0059D4BD /* FirebaseFirestore */,
 			);
 			productName = OceanStar;
 			productReference = 409442862961C8FB00520428 /* OceanStar.app */;
@@ -718,6 +729,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 401DF72B2963309B00EDBD3A /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
 			productName = MBProgressHUD;
+		};
+		402DC11D2972A1FE0059D4BD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401DF7222962C09E00EDBD3A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

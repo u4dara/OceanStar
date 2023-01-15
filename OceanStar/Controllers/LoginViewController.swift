@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
     }
     
     func login() {
+        view.endEditing(true)
         MBProgressHUD.showAdded(to: view, animated: true)
         delay(durationInSeconds: 1.5) {
             MBProgressHUD.hide(for: self.view, animated: true)

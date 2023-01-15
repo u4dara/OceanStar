@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class LoadingViewController: UIViewController {
     
-    private let isUserLoggedIn = true
+//    private let isUserLoggedIn = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,30 @@ class LoadingViewController: UIViewController {
     }
     
     private func showInitialView() {
-        if isUserLoggedIn {
-            PresenterManager.shared.show(vc: .mainTabBarController)
+//        if isUserLoggedIn {
+//            PresenterManager.shared.show(vc: .mainTabBarController)
+//        }
+//        else {
+//            performSegue(withIdentifier: K.Segue.showOnboarding, sender: nil)
+//        }
+        
+        checkUserInfo()
+    }
+    
+    private func checkUserInfo() {
+        if Auth.auth().currentUser != nil {
+            print(Auth.auth().currentUser?.uid)
+            
+            let storyboard = UIStoryboard(name: K.StoryboardID.Main, bundle: nil)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: K.StoryboardID.mainTabBarController)
+            vc?.modalPresentationStyle = .overFullScreen
+            self.present(vc!, animated: true)
         }
         else {
-            performSegue(withIdentifier: K.Segue.showOnboarding, sender: nil)
+            let storyboard = UIStoryboard(name: K.StoryboardID.Main, bundle: nil)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: K.StoryboardID.onboardingViewController)
+            vc?.modalPresentationStyle = .overFullScreen
+            self.present(vc!, animated: true)
         }
     }
 

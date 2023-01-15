@@ -21,6 +21,7 @@ class ForgetPasswordViewController: UIViewController {
     
     
     @IBAction func submitClicked(_ sender: UIButton) {
+        view.endEditing(true)
         MBProgressHUD.showAdded(to: view, animated: true)
         
         delay(durationInSeconds: 2) {
