@@ -10,3 +10,9 @@ import Foundation
 func delay(durationInSeconds seconds: Double, completion: @escaping () -> Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
 }
+
+extension String {
+    var asUrl: URL? {
+        return URL(string: self)
+    }
+}
