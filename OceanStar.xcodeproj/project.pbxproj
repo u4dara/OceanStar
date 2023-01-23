@@ -18,6 +18,12 @@
 		407E881329768C70005A885E /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E881129768C70005A885E /* PopularCollectionViewCell.swift */; };
 		407E881429768C70005A885E /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407E881229768C70005A885E /* PopularCollectionViewCell.xib */; };
 		407E881629768F4F005A885E /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E881529768F4F005A885E /* Dish.swift */; };
+		407E881A297ED344005A885E /* SpecialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8818297ED344005A885E /* SpecialCollectionViewCell.swift */; };
+		407E881B297ED344005A885E /* SpecialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407E8819297ED344005A885E /* SpecialCollectionViewCell.xib */; };
+		407E881D297EE771005A885E /* DishDelailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E881C297EE771005A885E /* DishDelailsViewController.swift */; };
+		407E8822297F0D34005A885E /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8820297F0D34005A885E /* DishListTableViewCell.swift */; };
+		407E8823297F0D34005A885E /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 407E8821297F0D34005A885E /* DishListTableViewCell.xib */; };
+		407E8825297F11F5005A885E /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8824297F11F5005A885E /* ListDishesViewController.swift */; };
 		4094428A2961C8FB00520428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409442892961C8FB00520428 /* AppDelegate.swift */; };
 		4094428C2961C8FB00520428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094428B2961C8FB00520428 /* SceneDelegate.swift */; };
 		409442912961C8FB00520428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4094428F2961C8FB00520428 /* Main.storyboard */; };
@@ -64,6 +70,12 @@
 		407E881129768C70005A885E /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		407E881229768C70005A885E /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
 		407E881529768F4F005A885E /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		407E8818297ED344005A885E /* SpecialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCollectionViewCell.swift; sourceTree = "<group>"; };
+		407E8819297ED344005A885E /* SpecialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialCollectionViewCell.xib; sourceTree = "<group>"; };
+		407E881C297EE771005A885E /* DishDelailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDelailsViewController.swift; sourceTree = "<group>"; };
+		407E8820297F0D34005A885E /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		407E8821297F0D34005A885E /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		407E8824297F11F5005A885E /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		409442862961C8FB00520428 /* OceanStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OceanStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409442892961C8FB00520428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4094428B2961C8FB00520428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +140,7 @@
 		407E880C29767233005A885E /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				407E881E297F0CC9005A885E /* TableViewCells */,
 				40ED2FB729752E8B00ECFC74 /* CollectionViewCells */,
 				407E880D29767249005A885E /* CardView */,
 			);
@@ -149,6 +162,32 @@
 				407E881229768C70005A885E /* PopularCollectionViewCell.xib */,
 			);
 			path = PopularCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		407E8817297ED30E005A885E /* SpecialCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				407E8818297ED344005A885E /* SpecialCollectionViewCell.swift */,
+				407E8819297ED344005A885E /* SpecialCollectionViewCell.xib */,
+			);
+			path = SpecialCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		407E881E297F0CC9005A885E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				407E881F297F0CEC005A885E /* DishListTableViewCells */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		407E881F297F0CEC005A885E /* DishListTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				407E8820297F0D34005A885E /* DishListTableViewCell.swift */,
+				407E8821297F0D34005A885E /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCells;
 			sourceTree = "<group>";
 		};
 		4094427D2961C8FA00520428 = {
@@ -217,6 +256,8 @@
 				409442C22961DC9B00520428 /* SettingsViewController.swift */,
 				401DF71E2962BDD300EDBD3A /* ForgetPasswordViewController.swift */,
 				401DF72E2963380400EDBD3A /* HomeViewController.swift */,
+				407E881C297EE771005A885E /* DishDelailsViewController.swift */,
+				407E8824297F11F5005A885E /* ListDishesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +282,7 @@
 		40ED2FB729752E8B00ECFC74 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				407E8817297ED30E005A885E /* SpecialCollectionViewCell */,
 				407E881029768C22005A885E /* PopularCollectionViewCell */,
 				40ED2FB829752EAA00ECFC74 /* CategoryCollectionViewCell */,
 			);
@@ -383,10 +425,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				409442962961C8FC00520428 /* LaunchScreen.storyboard in Resources */,
+				407E8823297F0D34005A885E /* DishListTableViewCell.xib in Resources */,
 				40ED2FBC29752F0E00ECFC74 /* CategoryCollectionViewCell.xib in Resources */,
 				401DF7212962C02500EDBD3A /* GoogleService-Info.plist in Resources */,
 				409442932961C8FC00520428 /* Assets.xcassets in Resources */,
 				407E881429768C70005A885E /* PopularCollectionViewCell.xib in Resources */,
+				407E881B297ED344005A885E /* SpecialCollectionViewCell.xib in Resources */,
 				409442912961C8FB00520428 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,13 +464,17 @@
 				4094428A2961C8FB00520428 /* AppDelegate.swift in Sources */,
 				40ED2FBB29752F0E00ECFC74 /* CategoryCollectionViewCell.swift in Sources */,
 				409442CA2961F88000520428 /* PresenterManager.swift in Sources */,
+				407E8825297F11F5005A885E /* ListDishesViewController.swift in Sources */,
 				409442C12961DC6400520428 /* LoadingViewController.swift in Sources */,
 				4094428C2961C8FB00520428 /* SceneDelegate.swift in Sources */,
 				401DF72F2963380400EDBD3A /* HomeViewController.swift in Sources */,
+				407E881D297EE771005A885E /* DishDelailsViewController.swift in Sources */,
 				409442BF2961DC5500520428 /* SignViewController.swift in Sources */,
+				407E8822297F0D34005A885E /* DishListTableViewCell.swift in Sources */,
 				407E881329768C70005A885E /* PopularCollectionViewCell.swift in Sources */,
 				407E881629768F4F005A885E /* Dish.swift in Sources */,
 				409442C32961DC9B00520428 /* SettingsViewController.swift in Sources */,
+				407E881A297ED344005A885E /* SpecialCollectionViewCell.swift in Sources */,
 				409442C72961E5BB00520428 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,8 +659,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,8 +690,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
